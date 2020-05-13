@@ -1,7 +1,7 @@
 # Личный проект «Техномарт»
 
 * Студент: [Big Boy](https://up.htmlacademy.ru/htmlcss/28/user/582965).
-* Наставник: `Неизвестно`.
+* Наставник: [Рафаэль Гулиев](https://htmlacademy.ru/profile/id472651).
 
 ---
 
