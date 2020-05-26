@@ -30,7 +30,7 @@
         <div>
           <div>
             <p>Равшан Джамшутович</p>
-            <button type="button">Выйти</button>
+            <a href="">Выйти</a>
           </div>
           <ul>
             <li><a href="">Мои заказы</a></li>
@@ -63,48 +63,85 @@
     <section>
       <h1 class="visually-hidden">Перфораторы</h1>
 
-      <div>
+      <form action="https://echo.htmlacademy.ru/" method="get">
         <h2>Фильтр:</h2>
         <div>
           <p>Цена:</p>
           <input type="range" aria-label="Цена">
-          <p><span>0</span> — <span>30000</span></p>
+          <p>
+            <input type="number" name="min-price" aria-label="Мин. цена" value="0">
+            —
+            <input type="number" name="max-price" aria-label="Макс. цена" value="30000">
+          </p>
         </div>
 
         <div>
           <p>Производители:</p>
           <ul>
-            <li><input type="checkbox" id="manufacturer-1"><label for="manufacturer-1">BOSCH</label></li>
-            <li><input type="checkbox" id="manufacturer-2"><label for="manufacturer-2">ИНТЕРСКОЛ</label></li>
-            <li><input type="checkbox" id="manufacturer-3"><label for="manufacturer-3">MAKIta</label></li>
-            <li><input type="checkbox" id="manufacturer-4"><label for="manufacturer-4">Dewalt</label></li>
-            <li><input type="checkbox" id="manufacturer-5"><label for="manufacturer-5">Hitachi</label></li>
+            <li>
+              <input type="checkbox" id="manufacturer-1" name="manufacturer" value="BOSCH">
+              <label for="manufacturer-1">BOSCH</label>
+            </li>
+            <li>
+              <input type="checkbox" id="manufacturer-2" name="manufacturer" value="ИНТЕРСКОЛ">
+              <label for="manufacturer-2">ИНТЕРСКОЛ</label>
+            </li>
+            <li>
+              <input type="checkbox" id="manufacturer-3" name="manufacturer" value="MAKIta">
+              <label for="manufacturer-3">MAKIta</label>
+            </li>
+            <li>
+              <input type="checkbox" id="manufacturer-4" name="manufacturer" value="Dewalt">
+              <label for="manufacturer-4">Dewalt</label>
+            </li>
+            <li>
+              <input type="checkbox" id="manufacturer-5" name="manufacturer" value="Hitachi">
+              <label for="manufacturer-5">Hitachi</label>
+            </li>
           </ul>
         </div>
 
         <div>
           <p>Питание:</p>
           <ul>
-            <li><input type="radio" id="power-supply-1" checked><label for="power-supply-1">Аккумуляторные</label></li>
-            <li><input type="radio" id="power-supply-2"><label for="power-supply-2">Сетевые</label></li>
+            <li>
+              <input type="radio" id="power-supply-1" name="power-supply" value="main" checked>
+              <label for="power-supply-1">Аккумуляторные</label>
+            </li>
+            <li>
+              <input type="radio" id="power-supply-2" name="power-supply" value="battery">
+              <label for="power-supply-2">Сетевые</label>
+            </li>
           </ul>
         </div>
 
-        <a href="">Показать</a>
-      </div>
+        <input type="submit" value="Показать">
+      </form>
 
       <div>
         <h2>Сортировка:</h2>
 
-        <label>
-          <input type="radio">По цене
-        </label>
-        <label>
-          <input type="radio">По типу
-        </label>
-        <label>
-          <input type="radio">По функционалу
-        </label>
+        <div>
+          <ul>
+            <li>
+              <button type="button">По цене</button>
+            </li>
+            <li>
+              <button type="button">По типу</button>
+            </li>
+            <li>
+              <button type="button">По функционалу</button>
+            </li>
+          </ul>
+          <ul>
+            <li>
+              <button type="button">По возрастанию</button>
+            </li>
+            <li>
+              <button type="button">По убыванию</button>
+            </li>
+          </ul>
+        </div>
       </div>
 
       <h2 class="visually-hidden">Список товаров</h2>
