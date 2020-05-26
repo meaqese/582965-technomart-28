@@ -6,11 +6,17 @@
 </head>
 <body>
   <header>
-    <a href="">ТЕХНОМАРТ</a>
-    <label><input type="text" placeholder="Поиск"></label>
-    <button>Закладки</button>
-    <button>Корзина</button>
-    <button>Оформить заказ</button>
+    <section>
+      <a href="">ТЕХНОМАРТ</a>
+      <form action="">
+        <label>Поиск
+          <input type="text" placeholder="Поиск">
+        </label>
+      </form>
+      <a href="">Закладки</a>
+      <a href="">Корзина: 10</a>
+      <a href="">Оформить заказ</a>
+    </section>
 
     <section>
       <div>
@@ -21,11 +27,16 @@
           г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8
         </p>
 
-        <ul>
-          <li><a href="">Равшан Джамшутович</a></li>
-          <li><a href="">Мои заказы</a></li>
-          <li><a href="">Личный кабинет</a></li>
-        </ul>
+        <div>
+          <div>
+            <p>Равшан Джамшутович</p>
+            <button type="button">Выйти</button>
+          </div>
+          <ul>
+            <li><a href="">Мои заказы</a></li>
+            <li><a href="">Личный кабинет</a></li>
+          </ul>
+        </div>
       </div>
 
       <nav>
@@ -43,44 +54,43 @@
   </header>
   <main>
     <ul>
-      <li><a>Главная</a></li>
+      <li><a href="">Главная</a></li>
       <li><a href="">Каталог</a></li>
       <li><a href="">Инструмент</a></li>
       <li><a href="">Перфораторы</a></li>
     </ul>
 
     <section>
-      <h1>Перфораторы</h1>
+      <h1 class="visually-hidden">Перфораторы</h1>
 
       <div>
         <h2>Фильтр:</h2>
-
         <div>
           <p>Цена:</p>
-          <input type="range">
+          <input type="range" aria-label="Цена">
           <p><span>0</span> — <span>30000</span></p>
         </div>
 
         <div>
           <p>Производители:</p>
           <ul>
-            <li><input type="checkbox">BOSCH</li>
-            <li><input type="checkbox">ИНТЕРСКОЛ</li>
-            <li><input type="checkbox">MAKIta</li>
-            <li><input type="checkbox">Dewalt</li>
-            <li><input type="checkbox">Hitachi</li>
+            <li><input type="checkbox" id="manufacturer-1"><label for="manufacturer-1">BOSCH</label></li>
+            <li><input type="checkbox" id="manufacturer-2"><label for="manufacturer-2">ИНТЕРСКОЛ</label></li>
+            <li><input type="checkbox" id="manufacturer-3"><label for="manufacturer-3">MAKIta</label></li>
+            <li><input type="checkbox" id="manufacturer-4"><label for="manufacturer-4">Dewalt</label></li>
+            <li><input type="checkbox" id="manufacturer-5"><label for="manufacturer-5">Hitachi</label></li>
           </ul>
         </div>
 
         <div>
-          <p>ПИТАНИЕ:</p>
+          <p>Питание:</p>
           <ul>
-            <li><input type="radio">Аккумуляторные</li>
-            <li><input type="radio">Сетевые</li>
+            <li><input type="radio" id="power-supply-1" checked><label for="power-supply-1">Аккумуляторные</label></li>
+            <li><input type="radio" id="power-supply-2"><label for="power-supply-2">Сетевые</label></li>
           </ul>
         </div>
 
-        <button>Показать</button>
+        <a href="">Показать</a>
       </div>
 
       <div>
@@ -97,7 +107,7 @@
         </label>
       </div>
 
-      <h2>Список товаров</h2>
+      <h2 class="visually-hidden">Список товаров</h2>
       <ul>
         <li>
             <img src="img/catalog/bfg6000.png" alt="Перфоратор BOSCH BFG 6000" width="144" height="128">
@@ -190,7 +200,7 @@
   <footer>
     <section>
       <div>
-        <h2>Карта сайта</h2>
+        <h2 class="visually-hidden">Карта сайта</h2>
         <p>ТЕХНОМАРТ</p>
         <ul>
           <li><a href="">Компания</a></li>
@@ -202,7 +212,7 @@
       </div>
 
       <div>
-        <h2>Как нас найти?</h2>
+        <h2 class="visually-hidden">Как нас найти?</h2>
         <p>
           г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8<br>
           +7 (812) 555-05-55
@@ -210,7 +220,7 @@
       </div>
 
       <div>
-        <h2>У нас вы можете найти</h2>
+        <h2 class="visually-hidden">У нас вы можете найти</h2>
         <ul>
           <li><a href="">Материалы</a></li>
           <li><a href="">Техника</a></li>
@@ -220,7 +230,7 @@
       </div>
 
       <div>
-        <h2>Мы в соцсетях</h2>
+        <h2 class="visually-hidden">Мы в соцсетях</h2>
         <ul>
           <li><a href="">VK</a></li>
           <li><a href="">Facebook</a></li>
@@ -231,5 +241,13 @@
       </div>
     </section>
   </footer>
+
+  <section class="visually-hidden">
+    <h2 class="visually-hidden">Уведомление</h2>
+    <p>Товар добавлен в корзину!</p>
+    <a href="">Оформить заказ</a>
+    <button type="button">Продолжить покупки</button>
+    <button type="button">Закрыть</button>
+  </section>
 </body>
 </html>
