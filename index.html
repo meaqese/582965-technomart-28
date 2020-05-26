@@ -6,16 +6,21 @@
   </head>
   <body>
     <header>
-      <a href="">ТЕХНОМАРТ</a>
-      <label><input type="text" placeholder="Поиск"></label>
-      <button>Закладки</button>
-      <button>Корзина</button>
-      <button>Оформить заказ</button>
-
+      <section>
+        <a href="">ТЕХНОМАРТ</a>
+        <form action="">
+          <label>Поиск
+            <input type="text" placeholder="Поиск">
+          </label>
+        </form>
+        <a href="">Закладки</a>
+        <a href="">Корзина</a>
+        <a href="">Оформить заказ</a>
+      </section>
       <section>
         <div>
           <p>Интернет-магазин<br>строительных материалов<br>и инструментов для ремонта</p>
-          <h2>Контактная информация</h2>
+          <h2 class="visually-hidden">Контактная информация</h2>
           <p>
             <span>+7 (812) 555-05-55</span><br>
             г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8
@@ -41,9 +46,9 @@
       </section>
     </header>
     <main>
-      <h1>Главная</h1>
+      <h1 class="visually-hidden">Главная</h1>
       <section>
-        <h2>Категории</h2>
+        <h2 class="visually-hidden">Категории</h2>
 
         <ul>
           <li>
@@ -169,7 +174,7 @@
           Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.
         </p>
 
-        <h2>Приемущества</h2>
+        <h2 class="visually-hidden">Приемущества</h2>
         <div>
           <ul>
             <li>Доставка</li>
@@ -237,7 +242,7 @@
     <footer>
       <section>
         <div>
-          <h2>Карта сайта</h2>
+          <h2 class="visually-hidden">Карта сайта</h2>
           <p>ТЕХНОМАРТ</p>
           <ul>
             <li><a href="">Компания</a></li>
@@ -249,7 +254,7 @@
         </div>
 
         <div>
-          <h2>Как нас найти?</h2>
+          <h2 class="visually-hidden">Как нас найти?</h2>
           <p>
             г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8<br>
             +7 (812) 555-05-55
@@ -257,7 +262,7 @@
         </div>
 
         <div>
-          <h2>У нас вы можете найти</h2>
+          <h2 class="visually-hidden">У нас вы можете найти</h2>
           <ul>
             <li><a href="">Материалы</a></li>
             <li><a href="">Техника</a></li>
@@ -267,7 +272,7 @@
         </div>
 
         <div>
-          <h2>Мы в соцсетях</h2>
+          <h2 class="visually-hidden">Мы в соцсетях</h2>
           <ul>
             <li><a href="">VK</a></li>
             <li><a href="">Facebook</a></li>
@@ -278,5 +283,29 @@
         </div>
       </section>
     </footer>
+
+    <section class="visually-hidden">
+      <h2>Напишите нам</h2>
+      <div>
+        <label for="name">Ваше имя:</label>
+        <input type="text" id="name" placeholder="Имя Фамилия">
+      </div>
+      <div>
+        <label for="email">Ваш e-mail:</label>
+        <input type="text" id="email" placeholder="email@example.com">
+      </div>
+      <div>
+        <label for="text">Текст письма:</label>
+        <textarea id="text" placeholder="В свободной форме"></textarea>
+      </div>
+      <button type="button">Оформить заказ</button>
+      <button type="button" aria-label="Закрыть">Закрыть</button>
+    </section>
+
+    <section class="visually-hidden">
+      <h2>Мы на карте</h2>
+      <img src="img/map.png" alt="Наше местоположение на карте" width="943" height="449">
+      <button type="button">Закрыть</button>
+    </section>
   </body>
 </html>
