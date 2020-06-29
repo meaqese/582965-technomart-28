@@ -53,6 +53,21 @@ body {
   text-transform: uppercase;
 }
 
+.white-button {
+  text-transform: uppercase;
+  text-align: center;
+  vertical-align: middle;
+
+  font-family: var(--pt-sans);
+  font-size: 13px;
+  line-height: 18px;
+
+  background-color: var(--white);
+  border: 1px solid #E5E5E5;
+
+  height: 38px;
+}
+
 a {
   text-decoration: none;
 }
@@ -62,14 +77,15 @@ img {
   height: auto;
 }
 
-/* -- Temp style --*/
+/* -- Temporary style --*/
 .popup {
   display: none;
 }
-/* -- Temp style --*/
+/* -- Temporary style --*/
+
+/* ⬇⬇⬇⬇⬇⬇⬇⬇⬇⬇⬇⬇⬇⬇⬇⬇⬇⬇⬇⬇ Non-global styles ⬇⬇⬇⬇⬇⬇⬇⬇⬇⬇⬇⬇⬇⬇⬇⬇⬇⬇⬇⬇⬇⬇⬇*/
 
 /* Header */
-
 /* header-top*/
 .header-top {
   background: var(--basic-grey);
@@ -121,9 +137,125 @@ img {
   line-height: 21px;
 }
 
+.profile-actions {
+  background: var(--white);
+}
+
+.profile-actions .profile-initials {
+  font-size: 21px;
+  line-height: 21px;
+}
+
+.profile-menu .profile-orders,
+.profile-menu .profile {
+  font-size: 16px;
+  line-height: 18px;
+}
+
 header nav {
   font-size: 18px;
   line-height: 24px;
+}
+
+/* MAIN */
+main .bread-crumbs {
+  text-transform: uppercase;
+  font-family: var(--pt-sans);
+  font-size: 13px;
+  line-height: 18px;
+}
+
+/* Main - Selection (Filters and Sorting options) */
+.manufacturer {
+  font-family: var(--pt-sans);
+}
+.manufacturer h3 {
+  font-weight: bold;
+  font-size: 17px;
+  line-height: 30px;
+}
+
+.manufacturer label {
+  text-transform: uppercase;
+  font-size: 15px;
+  line-height: 19px;
+}
+
+.power-supply {
+  font-family: var(--pt-sans);
+}
+
+.power-supply h3 {
+  font-weight: bold;
+  font-size: 17px;
+  line-height: 30px;
+}
+
+.power-supply label {
+  text-transform: uppercase;
+  font-size: 15px;
+  line-height: 19px;
+}
+
+.select {
+  width: 220px;
+}
+
+/* Main - Catalog of goods */
+.catalog .catalog-item {
+  border: 1px solid #EAEAEA;
+}
+
+.catalog-item h3 {
+  font-family: var(--pt-sans);
+
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 20px;
+}
+
+.catalog-item del {
+  font-family: var(--pt-sans);
+
+  color: #A9A9A9;
+  font-weight: bold;
+  font-size: 17px;
+  line-height: 18px;
+}
+
+.catalog-item .actual-price {
+  font-family: var(--pt-sans);
+
+  font-weight: bold;
+  font-size: 17px;
+  line-height: 18px;
+}
+
+.catalog-item .buy-button {
+  text-transform: uppercase;
+
+  font-family: var(--cuprum);
+  font-size: 14px;
+  line-height: 18px;
+  color: white;
+
+  background: var(--basic-green);
+  box-shadow: inset 0 -3px 0 #367315;
+  border-radius: 2px;
+}
+
+.catalog-item .to-bookmarks-button {
+  text-transform: uppercase;
+
+  font-family: var(--cuprum);
+  font-size: 14px;
+  line-height: 18px;
+  color: #32425C;
+
+  background: white;
+
+  border: 3px solid var(--basic-green);
+  border-radius: 2px;
 }
 
 /* ABOUT US */
