@@ -31,7 +31,8 @@
           <div class="header-contacts">
             <h2 class="visually-hidden">Контактная информация</h2>
 
-            <div class="telephone-number">+7 (812) 555-05-55</div>
+            <a class="telephone-number" href="tel: +78125550555">+7 (812) 555-05-55</a>
+            <!-- TODO: Поменять тэг сверху и в каталоге -->
             <p class="address">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
           </div>
 
@@ -41,7 +42,7 @@
           </ul>
         </div>
 
-        <nav>
+        <nav class="main-navigation">
           <ul>
             <li><a href="/">Главная</a></li>
             <li><a href="">Компания</a></li>
@@ -56,24 +57,28 @@
     </header>
     <main>
       <h1 class="visually-hidden">Главная</h1>
-      <section>
+
+      <section class="boxes">
         <h2 class="visually-hidden">Категории</h2>
 
-        <ul>
-          <li>
+        <ul class="boxes-list">
+          <li class="box-item">
             <p>Материалы</p>
             <a href="">на любой вкус</a>
           </li>
-          <li>
+          <li class="box-item">
             <p>Инструмент</p>
             <a href="">НА ВСЕ СЛУЧАИ</a>
           </li>
-          <li>
+          <li class="box-item">
             <p>Техника</p>
             <a href="">для стройки</a>
           </li>
-          <li>
-            <div>
+        </ul>
+
+        <div>
+          <ul>
+            <li>
               <p>
                 Перфораторы<br>
                 Настоящие мужские игрушки
@@ -81,22 +86,25 @@
               <a href="">Открыть каталог</a>
               <button type="button">Налево</button>
               <button type="button">Направо</button>
-            </div>
-          </li>
-          <li>
-            <p>Скидки 50%</p>
-            <div>На 350 ТОВАРОВ</div>
-          </li>
-          <li>
-            <p>Доставка</p>
-            <div>Бесплатно</div>
-          </li>
-        </ul>
+            </li>
+          </ul>
+
+          <ul class="boxes-list">
+            <li class="box-item">
+              <p>Скидки 50%</p>
+              <div>На 350 ТОВАРОВ</div>
+            </li>
+            <li class="box-item">
+              <p>Доставка</p>
+              <div>Бесплатно</div>
+            </li>
+          </ul>
+        </div>
       </section>
 
       <section>
         <h2>Популярные товары:</h2>
-        <a href="">Все популярные товары</a>
+        <a href="" class="button">Все популярные товары</a>
 
         <ul>
           <li>

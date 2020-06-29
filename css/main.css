@@ -68,6 +68,17 @@ body {
   height: 38px;
 }
 
+.visually-hidden {
+  position: absolute;
+
+  clip: rect(0 0 0 0);
+
+  width: 1px;
+  height: 1px;
+
+  margin: -1px;
+}
+
 a {
   text-decoration: none;
 }
@@ -91,15 +102,20 @@ img {
   background: var(--basic-grey);
 
   font-family: var(--cuprum);
-  font-size: 18px;
 }
 
 .header-search input {
   color: var(--white);
+  font-size: 18px;
+}
+
+.header-search label {
+  font-size: 18px;
 }
 
 .header-menu a {
   color: var(--white);
+  font-size: 18px;
 }
 
 /* header-bottom */
@@ -113,7 +129,7 @@ img {
   list-style: none;
 }
 
-.header-bottom .description {
+.description {
   font-size: 16px;
   font-style: italic;
   line-height: 23px;
@@ -152,7 +168,7 @@ img {
   line-height: 18px;
 }
 
-header nav {
+.main-navigation li{
   font-size: 18px;
   line-height: 24px;
 }
@@ -163,6 +179,10 @@ main .bread-crumbs {
   font-family: var(--pt-sans);
   font-size: 13px;
   line-height: 18px;
+}
+
+main .categories {
+
 }
 
 /* Main - Selection (Filters and Sorting options) */
@@ -200,6 +220,7 @@ main .bread-crumbs {
 .select {
   width: 220px;
 }
+
 
 /* Main - Catalog of goods */
 .catalog .catalog-item {
