@@ -129,7 +129,7 @@ img {
   list-style: none;
 }
 
-.description {
+.header-bottom .description {
   font-size: 16px;
   font-style: italic;
   line-height: 23px;
@@ -181,8 +181,59 @@ main .bread-crumbs {
   line-height: 18px;
 }
 
-main .categories {
+/* Main - Boxes*/
 
+.box-item p {
+  font-family: var(--cuprum);
+  font-size: 24px;
+  line-height: 30px;
+}
+
+.box-item a {
+  text-transform: uppercase;
+  font-size: 14px;
+  line-height: 18px;
+  color: white;
+
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+.boxes-list .special-yellow {
+  background-color: var(--special-yellow);
+}
+
+.boxes-list .special-blue {
+  background-color: var(--special-blue);
+}
+
+.boxes-list .special-lilac {
+  background-color: var(--special-lilac);
+}
+
+.boxes-list .special-greenlight {
+  background-color: var(--special-greenlight);
+}
+
+.boxes-list .special-yellowlight {
+  background-color: #FFC047;
+}
+
+/* Main - Slides */
+.slide-name {
+  text-transform: uppercase;
+
+  font-family: var(--cuprum);
+
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 36px;
+}
+
+.slide-description {
+  font-family: var(--cuprum);
+
+  font-size: 18px;
+  line-height: 24px;
 }
 
 /* Main - Selection (Filters and Sorting options) */
@@ -223,7 +274,92 @@ main .categories {
 
 
 /* Main - Catalog of goods */
-.catalog .catalog-item {
+.catalog-caption {
+  text-transform: uppercase;
+
+  font-weight: normal;
+  font-family: var(--cuprum);
+  font-size: 30px;
+  line-height: 30px;
+
+  background-color: #F2F6F8;
+}
+
+.filter h2 {
+  text-transform: uppercase;
+  font-weight: normal;
+  font-family: var(--pt-sans);
+  font-size: 13px;
+  line-height: 18px;
+
+  background-color: #F7F3EC;
+}
+
+.pricing h3 {
+  font-family: var(--pt-sans);
+  font-weight: bold;
+  font-size: 17px;
+  line-height: 30px;
+}
+
+.price-range {
+  background-color: #F7F3EC;
+}
+
+.sorting h2 {
+  text-transform: uppercase;
+  font-weight: normal;
+  font-family: var(--pt-sans);
+  font-size: 13px;
+  line-height: 18px;
+
+  background-color: #F7F3EC;
+}
+
+.sort-option {
+  display: inline;
+
+  padding: 0;
+
+  text-transform: uppercase;
+
+  font-family: var(--pt-sans);
+  font-size: 13px;
+  line-height: 18px;
+  color: var(--basic-greylight);
+
+  background-color: inherit;
+
+  border: 0;
+}
+
+.sorting-options .active {
+  font-size: 13px;
+  line-height: 18px;
+  color: var(--basic-red);
+}
+
+.sort-advantages .sort-option {
+  border-bottom: 1px dotted var(--basic-red);
+}
+
+.pricing input[type=number] {
+  display: inline;
+
+  width: 95px;
+  height: 38px;
+
+  border: 0;
+  border-radius: 2px;
+
+  background-color: #F7F3EC;
+
+  font-family: var(--pt-sans);
+  font-size: 17px;
+  line-height: 18px;
+}
+
+.catalog-item {
   border: 1px solid #EAEAEA;
 }
 
@@ -279,7 +415,127 @@ main .categories {
   border-radius: 2px;
 }
 
-/* ABOUT US */
+/* Main - Popular goods */
+.popular-goods h2,
+.popular-manufacturers h2 {
+  font-family: var(--cuprum);
+  font-size: 30px;
+  line-height: 30px;
+}
+.popular-goods-head,
+.popular-manufacturers-head {
+ background-color: #F9F5F0;
+}
+
+/* Main - Manufacturers */
+.manufacturer-item a {
+  display: inline-block;
+  border: 1px solid #EAEAEA;;
+}
+
+/* Main - Services */
+.services {
+  background-color: var(--basic-background);
+}
+
+.services h2 {
+  font-family: var(--cuprum);
+  font-size: 30px;
+  line-height: 30px;
+}
+
+.services .description {
+  font-family: var(--pt-sans);
+  font-size: 13px;
+  line-height: 24px;
+}
+
+.services-item {
+  font-family: var(--cuprum);
+  font-weight: bold;
+  font-size: 21px;
+  line-height: 30px;
+
+  color: white;
+
+  width: 240px;
+  height: 61px;
+
+  background-color: #32425C;
+
+  border: 0;
+
+  box-shadow:
+    0 1px 0 #293449,
+    inset 0 1px 0 #405069;
+}
+
+.services-item:focus,
+.services-item.active {
+  background-color: white;
+  box-shadow: 0 1px 0 #FFFFFF;
+
+  color: #32425C;
+}
+
+.delivery-description h3,
+.guarantee-description h3,
+.loan-description h3 {
+  font-family: var(--cuprum);
+  font-size: 36px;
+  line-height: 24px;
+}
+
+.delivery-description p,
+.guarantee-description p,
+.loan-description p {
+  font-family: var(--pt-sans);
+  font-size: 13px;
+  line-height: 24px;
+}
+
+/* Pagination */
+.pagination a {
+  color: black;
+  text-transform: uppercase;
+  text-align: center;
+  vertical-align: middle;
+
+  font-family: var(--pt-sans);
+  font-size: 13px;
+  line-height: 18px;
+
+  background-color: var(--white);
+  border: 1px solid #E5E5E5;
+
+  height: 38px;
+}
+
+.pagination a.active {
+  color: white;
+
+  background-color: var(--basic-red);
+}
+
+/* Main - About Good */
+.about-good {
+  background-color: var(--basic-background);
+}
+
+.about-good .caption {
+  text-transform: uppercase;
+  font-family: var(--cuprum);
+  font-size: 30px;
+  line-height: 30px;
+}
+
+.about-good .description {
+  font-family: var(--pt-sans);
+  font-size: 13px;
+  line-height: 24px;
+}
+
+  /* ABOUT US */
 .about-us {
   background: var(--white);
   font-family: var(--cuprum);
@@ -323,6 +579,10 @@ main .categories {
 }
 
 /* footer-top*/
+.footer-top {
+  background-color: #32425C;
+}
+
 .footer-sitemap ul {
   list-style: none;
 }
@@ -346,7 +606,13 @@ main .categories {
 }
 
 /* footer bottom */
+.footer-bottom {
+  background-color: #293449;
+}
+
 .copyright {
+  font-family: var(--cuprum);
+  color: white;
   font-size: 16px;
   line-height: 18px;
 }

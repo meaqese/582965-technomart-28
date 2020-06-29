@@ -32,7 +32,7 @@
         <div class="header-contacts">
           <h2 class="visually-hidden">Контактная информация</h2>
 
-          <div class="telephone-number">+7 (812) 555-05-55</div>
+          <a class="telephone-number" href="tel: +78125550555">+7 (812) 555-05-55</a>
           <p class="address">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
         </div>
 
@@ -70,18 +70,20 @@
     </ul>
 
     <section>
-      <h1 class="visually-hidden">Перфораторы</h1>
+      <h1 class="catalog-caption">Перфораторы</h1>
 
-      <form action="https://echo.htmlacademy.ru/" method="get">
+      <form action="https://echo.htmlacademy.ru/" method="get" class="filter">
         <h2>Фильтр:</h2>
-        <div>
+
+        <div class="pricing">
           <h3>Цена:</h3>
-          <input type="range" aria-label="Цена">
-          <p>
-            <input type="number" name="min-price" aria-label="Мин. цена" value="0">
-            —
-            <input type="number" name="max-price" aria-label="Макс. цена" value="30000">
-          </p>
+
+          <div class="price-range">
+            <input type="range" aria-label="Цена">
+          </div>
+
+          <input type="number" name="min-price" aria-label="Мин. цена" value="0">
+          <input type="number" name="max-price" aria-label="Макс. цена" value="30000">
         </div>
 
         <div class="manufacturer">
@@ -127,27 +129,27 @@
         <input class="white-button select" type="submit" value="Показать">
       </form>
 
-      <div>
+      <div class="sorting">
         <h2>Сортировка:</h2>
 
-        <div>
-          <ul>
+        <div class="sorting-options">
+          <ul class="sort-advantages">
             <li>
-              <button type="button">По цене</button>
+              <button type="button" class="sort-option active">По цене</button>
             </li>
             <li>
-              <button type="button">По типу</button>
+              <button type="button" class="sort-option">По типу</button>
             </li>
             <li>
-              <button type="button">По функционалу</button>
+              <button type="button" class="sort-option">По функционалу</button>
             </li>
           </ul>
           <ul>
             <li>
-              <button type="button">По возрастанию</button>
+              <button type="button" class="active sort-option">По возрастанию</button>
             </li>
             <li>
-              <button type="button">По убыванию</button>
+              <button type="button" class="sort-option">По убыванию</button>
             </li>
           </ul>
         </div>
@@ -227,16 +229,16 @@
           </p>
         </li>
       </ul>
-      <ul>
-        <li><a href="">1</a></li>
+      <ul class="pagination">
+        <li><a href="" class="active">1</a></li>
         <li><a href="">2</a></li>
         <li><a href="">3</a></li>
-        <li><a href="">СЛЕДУЮЩАЯ</a></li>
+        <li><a href="">Следующая</a></li>
       </ul>
     </section>
-    <article>
-      <p>Пара слов о перфораторах</p>
-      <p>
+    <article class="about-good">
+      <p class="caption">Пара слов о перфораторах</p>
+      <p class="description">
         Перфоратор — универсальный строительный инструмент. Предназначен для сверления и долбления отверстий в кирпиче, бетоне и камне.<br>
         Существуют электромеханические и пневматические перфораторы. Современные модели могут выполнять функции дрели, шуруповерта и отбойного молотка.<br>
         В ассортиментном ряду есть выбор «трехрежимников»: в одном устройстве будут совмещены отбойный молоток и ударная дрель.

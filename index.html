@@ -32,7 +32,6 @@
             <h2 class="visually-hidden">Контактная информация</h2>
 
             <a class="telephone-number" href="tel: +78125550555">+7 (812) 555-05-55</a>
-            <!-- TODO: Поменять тэг сверху и в каталоге -->
             <p class="address">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
           </div>
 
@@ -62,146 +61,162 @@
         <h2 class="visually-hidden">Категории</h2>
 
         <ul class="boxes-list">
-          <li class="box-item">
+          <li class="box-item special-yellow">
             <p>Материалы</p>
             <a href="">на любой вкус</a>
           </li>
-          <li class="box-item">
+          <li class="box-item special-blue">
             <p>Инструмент</p>
-            <a href="">НА ВСЕ СЛУЧАИ</a>
+            <a href="">на все случаи</a>
           </li>
-          <li class="box-item">
+          <li class="box-item special-lilac">
             <p>Техника</p>
             <a href="">для стройки</a>
           </li>
         </ul>
 
         <div>
-          <ul>
-            <li>
+          <ul class="slides">
+            <li class="slide-item hammer-drill">
               <p>
-                Перфораторы<br>
-                Настоящие мужские игрушки
+                <span class="slide-name">Перфораторы</span><br>
+                <span class="slide-description">Настоящие мужские игрушки</span>
               </p>
-              <a href="">Открыть каталог</a>
+              <a href="" class="button">Открыть каталог</a>
+
+              <button type="button">Налево</button>
+              <button type="button">Направо</button>
+            </li>
+            <li class="slide-item drill">
+              <p>
+                <span class="slide-name">Дрели</span><br>
+                <span class="slide-description">Соседям на радость!</span>
+              </p>
+              <a href="" class="button">Открыть каталог</a>
+
               <button type="button">Налево</button>
               <button type="button">Направо</button>
             </li>
           </ul>
 
           <ul class="boxes-list">
-            <li class="box-item">
+            <li class="box-item special-greenlight">
               <p>Скидки 50%</p>
-              <div>На 350 ТОВАРОВ</div>
+              <a href="">На 350 товаров</a>
             </li>
-            <li class="box-item">
+            <li class="box-item special-yellowlight">
               <p>Доставка</p>
-              <div>Бесплатно</div>
+              <a href="">Бесплатно</a>
             </li>
           </ul>
         </div>
       </section>
 
-      <section>
-        <h2>Популярные товары:</h2>
-        <a href="" class="button">Все популярные товары</a>
+      <section class="popular-goods">
+        <div class="popular-goods-head">
+          <h2>Популярные товары:</h2>
+          <a href="" class="button">Все популярные товары</a>
+        </div>
 
-        <ul>
-          <li>
+        <ul class="catalog">
+          <li class="catalog-item">
             <img src="img/catalog/bfg9000.png" alt="Перфоратор BOSCH BFG 9000" width="184" height="164">
             <h3>Перфоратор BOSCH BFG 9000</h3>
             <p>
               <del>32500 Р.</del>
-              <span>25500 Р.</span>
+              <span class="actual-price">25500 Р.</span>
             </p>
           </li>
-          <li>
+          <li class="catalog-item">
             <img src="img/catalog/bfg3000.png" alt="Перфоратор BOSCH BFG 3000" width="127" height="112">
             <h3>Перфоратор BOSCH BFG 3000</h3>
             <p>
               <del>22500 Р.</del>
-              <span>15500 Р.</span>
+              <span class="actual-price">15500 Р.</span>
             </p>
           </li>
-          <li>
+          <li class="catalog-item">
             <img src="img/catalog/bfg6000.png" alt="Перфоратор BOSCH BFG 6000" width="144" height="128">
             <h3>Перфоратор BOSCH BFG 6000</h3>
             <p>
               <del>30500 Р.</del>
-              <span>25500 Р.</span>
+              <span class="actual-price">25500 Р.</span>
             </p>
           </li>
-          <li>
+          <li class="catalog-item">
             <img src="img/catalog/bfg2000.png" alt="Перфоратор BOSCH BFG 2000" width="127" height="112">
             <h3>Перфоратор BOSCH BFG 2000</h3>
             <p>
-              <span>12500 Р.</span>
+              <span class="actual-price">12500 Р.</span>
             </p>
           </li>
         </ul>
       </section>
-      <section>
-        <h2>Популярные производители:</h2>
+      <section class="popular-manufacturers">
+        <div class="popular-manufacturers-head">
+          <h2>Популярные производители:</h2>
+          <a href="" class="button">Все популярные производители</a>
+        </div>
 
-        <ul>
-          <li>
+        <ul class="manufacturers">
+          <li class="manufacturer-item">
             <a href="">
               <img src="img/manufacturers/bosch.png" alt="Bosch" width="126" height="37">
             </a>
           </li>
-          <li>
+          <li class="manufacturer-item">
             <a href="">
               <img src="img/manufacturers/Makita.png" alt="Makita" width="123" height="40">
             </a>
           </li>
-          <li>
+          <li class="manufacturer-item">
             <a href="">
               <img src="img/manufacturers/DeWALT.png" alt="DeWalt" width="146" height="44">
             </a>
           </li>
-          <li>
+          <li class="manufacturer-item">
             <a href="">
               <img src="img/manufacturers/Интерскол.png" alt="ИНТЕРСКОЛ" width="200" height="88">
             </a>
           </li>
-          <li>
+          <li class="manufacturer-item">
             <a href="">
               <img src="img/manufacturers/Hitachi.png" alt="HITACHI" width="169" height="31">
             </a>
           </li>
-          <li>
+          <li class="manufacturer-item">
             <a href="">
               <img src="img/manufacturers/LG.png" alt="LG" width="121" height="73">
             </a>
           </li>
-          <li>
+          <li class="manufacturer-item">
             <a href="">
               <img src="img/manufacturers/AEG.png" alt="AEG" width="151" height="96">
             </a>
           </li>
-          <li>
+          <li class="manufacturer-item">
             <a href="">
               <img src="img/manufacturers/Metabo.png" alt="metabo" width="204" height="69">
             </a>
           </li>
         </ul>
       </section>
-      <section>
+      <section class="services">
         <h2>Сервисы</h2>
-        <p>
+
+        <p class="description">
           Хороший интернет-магазин отличается от плохого не только ценами!<br>
           Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.
         </p>
 
-        <h2 class="visually-hidden">Приемущества</h2>
         <div>
-          <ul>
-            <li>Доставка</li>
-            <li>Гарантия</li>
-            <li>Кредит</li>
+          <ul class="services-list">
+            <li><button class="services-item active">Доставка</button></li>
+            <li><button class="services-item">Гарантия</button></li>
+            <li><button class="services-item">Кредит</button></li>
           </ul>
 
-          <div>
+          <div class="delivery-description">
             <h3>Доставка</h3>
             <p>
               Мы с удовольствием доставим ваш товар прямо<br>
@@ -210,7 +225,7 @@
               поднимая его на ваш этаж!
             </p>
           </div>
-          <div>
+          <div class="guarantee-description">
             <h3>Гарантия</h3>
             <p>
               Если купленный у нас товар поломается или заискрит<br>, а также в случае пожара, спровоцированного его<br>
@@ -218,7 +233,7 @@
               Дом уж восстановите как-нибудь сами.
             </p>
           </div>
-          <div>
+          <div class="loan-description">
             <h3>Кредит</h3>
             <p>
               Залезть в долговую яму стало проще!<br>
