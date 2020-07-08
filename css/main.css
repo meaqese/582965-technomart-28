@@ -44,8 +44,13 @@
 
 /* Global */
 
+html {
+  height: 100%;
+}
+
 body {
   min-width: 960px;
+  min-height: 100%;
 
   padding: 0;
   margin: 0;
@@ -56,28 +61,7 @@ body {
   font-style: normal;
 
   line-height: 24px;
-}
 
-.button {
-  font-family: var(--cuprum);
-  font-size: 14px;
-  line-height: 18px;
-
-  background: var(--basic-red);
-  color: white;
-
-  text-align: center;
-  vertical-align: middle;
-
-  text-transform: uppercase;
-}
-
-html {
-  height: 100%;
-}
-
-body {
-  min-height: 100%;
   display: grid;
   grid-template-rows: min-content 1fr min-content;
   align-content: start;
@@ -98,6 +82,26 @@ body {
   border: 1px solid var(--white-border);
 
   height: 38px;
+}
+
+.button {
+  font-family: var(--cuprum);
+  font-size: 14px;
+  line-height: 18px;
+  color: white;
+
+  height: 38px;
+
+  background: var(--basic-red);
+
+  text-align: center;
+
+  padding-top: 11px;
+  padding-bottom: 9px;
+
+  text-transform: uppercase;
+
+  display: block;
 }
 
 .visually-hidden {
@@ -440,6 +444,9 @@ img {
   display: block;
 }
 
+.slider .button {
+  width: 192px;
+}
 
 /* Main - Catalog of goods */
 .catalog-body.container {
@@ -782,24 +789,29 @@ img {
 }
 
 /* Main - Popular goods */
-.popular-goods-head,
-.popular-manufacturers-head {
+.section-head {
   display: flex;
   align-items: center;
   justify-content: space-between;
 
   margin-bottom: 20px;
+  padding-left: 28px;
+  padding-right: 19px;
+
+  background-color: var(--sections-header);
 }
 
-.popular-goods h2,
-.popular-manufacturers h2 {
+.section-head h2 {
   font-family: var(--cuprum);
   font-size: 30px;
   line-height: 30px;
+  color: var(--special-grey);
+  text-transform: uppercase;
+  font-weight: normal;
 }
-.popular-goods-head,
-.popular-manufacturers-head {
-  background-color: var(--sections-header);
+
+.section-head .button {
+  width: 192px;
 }
 
 /* Main - Manufacturers */
@@ -846,12 +858,16 @@ img {
   font-family: var(--cuprum);
   font-size: 30px;
   line-height: 30px;
+
+  margin: 0;
 }
 
 .services-description p {
   font-family: var(--pt-sans);
   font-size: 13px;
   line-height: 24px;
+
+  width: 394px;
 }
 
 .services-list {
@@ -1001,6 +1017,8 @@ img {
   font-family: var(--pt-sans);
   font-size: 13px;
   line-height: 24px;
+
+  width: 331px;
 }
 
 /* Pagination */
@@ -1056,6 +1074,7 @@ img {
   text-transform: uppercase;
   font-family: var(--cuprum);
   font-size: 30px;
+  font-weight: normal;
   line-height: 30px;
 
   margin: 0;
@@ -1072,7 +1091,8 @@ img {
   display: flex;
   justify-content: space-between;
 
-  margin-bottom: 70px;
+  padding-top: 70px;
+  padding-bottom: 70px;
 }
 
 .about-us {
@@ -1084,21 +1104,29 @@ img {
   font-size: 30px;
   line-height: 30px;
   text-transform: uppercase;
+
+  margin: 0;
 }
 
 .about-us p {
   font-family: var(--pt-sans);
   font-size: 13px;
   line-height: 24px;
+
+  width: 478px;
 }
 
-.about-us ul.companies {
+.about-us .companies {
   list-style: none;
 }
 
 .about-us li {
   font-size: 18px;
   line-height: 24px;
+}
+
+.about-us .button {
+  width: 220px;
 }
 
 /* MAIN CONTACTS */
@@ -1110,12 +1138,21 @@ img {
 .main-contacts h2 {
   font-size: 30px;
   line-height: 30px;
+
+  margin: 0;
 }
 
 .main-contacts p {
   font-family: var(--pt-sans);
   font-size: 13px;
+
+  width: 180px;
 }
+
+.main-contacts .button {
+  width: 300px;
+}
+
 
 /* FOOTER */
 .footer {
@@ -1168,6 +1205,8 @@ img {
 .footer-contacts p {
   color: var(--contacts-text);
   font-size: 18px;
+
+  width: 321px;
 }
 
 .footer-categories-list {
@@ -1240,6 +1279,15 @@ img {
   font-size: 16px;
   line-height: 18px;
 }
+
+.feedback {
+  width: 137px;
+}
+
+.developed-by {
+  width: 98px;
+}
+
 
 .other-links span {
   color: var(--footer-yellow-text);
