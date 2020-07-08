@@ -173,7 +173,7 @@ img {
   font-size: 18px;
 }
 
-.header-menu .checkout-button {
+.checkout-button {
   background-color: var(--basic-green);
 }
 
@@ -207,6 +207,8 @@ img {
 
   margin: 0;
 
+  width: 197px;
+
   color: var(--basic-red);
 }
 
@@ -214,7 +216,7 @@ img {
   min-height: 72px;
 }
 
-.header-contacts .telephone-number {
+.telephone-number {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -240,7 +242,7 @@ img {
   text-align: center;
 }
 
-.header-bottom .auth-buttons {
+.auth-buttons {
   margin: 0;
   padding: 0;
   list-style: none;
@@ -278,15 +280,15 @@ img {
   align-items: center;
 }
 
-.profile-actions .profile-initials {
+.profile-initials {
   font-size: 21px;
   line-height: 21px;
 
   margin: 0;
 }
 
-.profile-menu .profile-orders,
-.profile-menu .profile {
+.profile-orders,
+.profile {
   font-size: 16px;
   line-height: 18px;
   color: var(--special-grey);
@@ -438,54 +440,6 @@ img {
   display: block;
 }
 
-/* Main - Selection (Filters and Sorting options) */
-.filter-manufacturers-caption {
-  font-weight: bold;
-  font-size: 17px;
-  line-height: 30px;
-  text-transform: uppercase;
-  font-family: var(--pt-sans);
-}
-
-.filter-manufacturers-list {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-
-.filter-manufacturers-item label {
-  text-transform: uppercase;
-  font-size: 15px;
-  line-height: 19px;
-  font-family: var(--pt-sans);
-}
-
-.filter-power-supply-caption {
-  font-weight: bold;
-  font-size: 17px;
-  line-height: 30px;
-  text-transform: uppercase;
-  font-family: var(--pt-sans);
-}
-
-.filter-power-supply-list {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-
-.filter-power-supply-item label {
-  text-transform: uppercase;
-  font-size: 15px;
-  line-height: 19px;
-  font-family: var(--pt-sans);
-}
-
-.filter .white-button {
-  width: 220px;
-  margin-top: 34px;
-}
-
 
 /* Main - Catalog of goods */
 .catalog-body.container {
@@ -543,6 +497,8 @@ img {
   justify-content: space-between;
 }
 
+/* FILTERS - START */
+
 .filter {
   display: flex;
   flex-direction: column;
@@ -569,7 +525,7 @@ img {
 }
 
 
-.pricing-caption {
+.filter-option-caption {
   font-family: var(--pt-sans);
   font-weight: bold;
   font-size: 17px;
@@ -580,7 +536,7 @@ img {
   margin-top: 15px;
 }
 
-.price-range {
+.filter-option-range {
   margin-top: 11px;
 
   background-color: var(--light-yellow-white);
@@ -595,14 +551,14 @@ img {
   border-radius: 5px;
 }
 
-.price-range-in-numbers {
+.filter-option-range-in-numbers {
   margin-top: 9px;
 
   display: flex;
   justify-content: space-between;
 }
 
-.price-range-in-numbers input[type=number] {
+.filter-option-range-in-numbers input[type=number] {
   display: inline;
 
   width: 95px;
@@ -621,6 +577,26 @@ img {
   padding: 10px 0;
   text-align: center;
 }
+
+.filter-option-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.filter-option-item label {
+  text-transform: uppercase;
+  font-size: 15px;
+  line-height: 19px;
+  font-family: var(--pt-sans);
+}
+
+.filter .white-button {
+  width: 220px;
+  margin-top: 34px;
+}
+
+/* FILTERS END */
 
 .right-side {
   height: 1142px;
@@ -749,7 +725,7 @@ img {
   text-align: center;
 }
 
-.catalog-item-info .old-price {
+.old-price {
   text-decoration: line-through;
   font-family: var(--pt-sans);
   color: var(--grey-text);
@@ -760,7 +736,7 @@ img {
   margin: 0;
 }
 
-.catalog-item-info .actual-price {
+.actual-price {
   font-family: var(--pt-sans);
   font-weight: bold;
   font-size: 17px;
@@ -778,7 +754,7 @@ img {
   background-position: 45px 0;
 }
 
-.catalog-item-info .buy-button {
+.buy-button {
   text-transform: uppercase;
 
   font-family: var(--cuprum);
@@ -791,7 +767,7 @@ img {
   border-radius: 2px;
 }
 
-.catalog-item-info .to-bookmarks-button {
+.to-bookmarks-button {
   text-transform: uppercase;
 
   font-family: var(--cuprum);
@@ -944,6 +920,7 @@ img {
 
 .delivery::after {
   position: absolute;
+  top: 0;
   right: 0;
 
   content: '';
@@ -956,6 +933,7 @@ img {
 
 .guarantee::after {
   position: absolute;
+  top: 0;
   right: 0;
 
   content: '';
@@ -968,6 +946,7 @@ img {
 
 .loan::after {
   position: absolute;
+  top: 0;
   right: 0;
 
   content: '';
@@ -998,8 +977,7 @@ img {
 }
 
 .tab-item-active {
-  display: flex;
-  justify-content: space-between;
+  display: block;
 }
 
 .tab-item-description {

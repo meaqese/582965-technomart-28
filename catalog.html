@@ -16,7 +16,7 @@
         <a class="logo" href="">
           <img src="img/logo.svg" alt="Логотип ТЕХНОМАРТ" width="220" height="47">
         </a>
-        <form action="https://echo.htmlacademy.ru" method="get" class="header-search">
+        <form class="header-search" action="https://echo.htmlacademy.ru" method="get">
           <label for="search">Поиск</label>
           <input type="text" id="search" placeholder="Поиск">
         </form>
@@ -30,7 +30,7 @@
     <section class="header-bottom">
       <div class="container">
         <div class="header-bottom-top">
-          <p class="description">Интернет-магазин<br>строительных материалов<br>и инструментов для ремонта</p>
+          <p class="description">Интернет-магазин строительных материалов и инструментов для ремонта</p>
           <div class="header-contacts">
             <h2 class="visually-hidden">Контактная информация</h2>
 
@@ -82,38 +82,38 @@
           <h2>Фильтр:</h2>
 
           <div>
-            <h3 class="pricing-caption">Цена:</h3>
+            <h3 class="filter-option-caption">Цена:</h3>
 
-            <div class="price-range">
+            <div class="filter-option-range">
               <input type="range" aria-label="Цена">
             </div>
 
-            <div class="price-range-in-numbers">
+            <div class="filter-option-range-in-numbers">
               <input type="number" name="min-price" aria-label="Мин. цена" value="0">
               <input type="number" name="max-price" aria-label="Макс. цена" value="30000">
             </div>
           </div>
 
           <div>
-            <h3 class="filter-manufacturers-caption">Производители:</h3>
-            <ul class="filter-manufacturers-list">
-              <li class="filter-manufacturers-item">
+            <h3 class="filter-option-caption">Производители:</h3>
+            <ul class="filter-option-list">
+              <li class="filter-option-item">
                 <input type="checkbox" id="manufacturer-1" name="manufacturer" value="BOSCH">
                 <label for="manufacturer-1">BOSCH</label>
               </li>
-              <li class="filter-manufacturers-item">
+              <li class="filter-option-item">
                 <input type="checkbox" id="manufacturer-2" name="manufacturer" value="ИНТЕРСКОЛ">
                 <label for="manufacturer-2">ИНТЕРСКОЛ</label>
               </li>
-              <li class="filter-manufacturers-item">
+              <li class="filter-option-item">
                 <input type="checkbox" id="manufacturer-3" name="manufacturer" value="MAKIta">
                 <label for="manufacturer-3">MAKIta</label>
               </li>
-              <li class="filter-manufacturers-item">
+              <li class="filter-option-item">
                 <input type="checkbox" id="manufacturer-4" name="manufacturer" value="Dewalt">
                 <label for="manufacturer-4">Dewalt</label>
               </li>
-              <li class="filter-manufacturers-item">
+              <li class="filter-option-item">
                 <input type="checkbox" id="manufacturer-5" name="manufacturer" value="Hitachi">
                 <label for="manufacturer-5">Hitachi</label>
               </li>
@@ -121,13 +121,13 @@
             </div>
 
             <div>
-              <h3 class="filter-power-supply-caption">Питание:</h3>
-              <ul class="filter-power-supply-list">
-                <li class="filter-power-supply-item">
+              <h3 class="filter-option-caption">Питание:</h3>
+              <ul class="filter-option-list">
+                <li class="filter-option-item">
                   <input type="radio" id="power-supply-1" name="power-supply" value="main" checked>
                   <label for="power-supply-1">Аккумуляторные</label>
                 </li>
-                <li class="filter-power-supply-item">
+                <li class="filter-option-item">
                   <input type="radio" id="power-supply-2" name="power-supply" value="battery">
                   <label for="power-supply-2">Сетевые</label>
                 </li>
@@ -270,8 +270,6 @@
   <footer class="footer">
     <div class="footer-top">
       <div class="container">
-        <h2 class="visually-hidden">Карта сайта</h2>
-
         <div class="footer-sitemap-top">
           <a class="logo" href="">
             <img src="img/logo.svg" alt="ТЕХНОМАРТ" width="220" height="68">
