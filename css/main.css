@@ -236,7 +236,7 @@ img {
   border: 3px solid white;
 }
 
-.header-contacts .address {
+.address {
   margin: 0;
   margin-top: 3px;
 
@@ -394,23 +394,23 @@ img {
   background-color: rgba(255, 255, 255, 0.3);
 }
 
-.boxes-list .special-yellow {
+.special-yellow {
   background-color: var(--special-yellow);
 }
 
-.boxes-list .special-blue {
+.special-blue {
   background-color: var(--special-blue);
 }
 
-.boxes-list .special-lilac {
+.special-lilac {
   background-color: var(--special-lilac);
 }
 
-.features-list .special-greenlight {
+.special-greenlight {
   background-color: var(--special-greenlight);
 }
 
-.features-list .special-yellowlight {
+.special-yellowlight {
   background-color: var(--special-yellowlight);
 }
 
@@ -973,7 +973,7 @@ img {
   height: 285px;
 }
 
-.loan .send-request-button {
+.send-request-button {
   width: 195px;
   min-height: 38px;
 
@@ -1056,7 +1056,7 @@ img {
   height: 38px;
 }
 
-.pagination a.active {
+.pagination .active {
   color: white;
 
   background-color: var(--basic-red);
@@ -1077,13 +1077,16 @@ img {
   font-weight: normal;
   line-height: 30px;
 
-  margin: 0;
+  margin-top: 0;
+  margin-bottom: 25px;
 }
 
-.about-good .description {
+.about-good p {
   font-family: var(--pt-sans);
   font-size: 13px;
   line-height: 24px;
+
+  margin: 0;
 }
 
   /* ABOUT US */
@@ -1116,7 +1119,7 @@ img {
   width: 478px;
 }
 
-.about-us .companies {
+.companies {
   list-style: none;
 }
 
