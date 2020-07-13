@@ -20,5 +20,5 @@ let popupConstructor = function (popupClass, openButtonClass, closeButtonClass, 
   });
 };
 
-popupConstructor('.map-popup', '.open-map-button', '.map-popup-close', [false, true]);
+popupConstructor('.map-popup', '.open-map-button', '.map-popup-close', [true, false]);
 popupConstructor('.contact-us-popup', '.open-contact-us-popup', '.contact-us-popup-close', [true, false]);
