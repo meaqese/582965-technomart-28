@@ -1,25 +1,24 @@
-let mapOpenButton = document.querySelector('.open-map-button');
-let mapCloseButton = document.querySelector('.map-popup-close');
-let mapPopup = document.querySelector('.map-popup');
+let popupConstructor = function (popupClass, openButtonClass, closeButtonClass, defaultActionList) {
+  let popup = document.querySelector(popupClass);
+  let openButton = document.querySelector(openButtonClass);
+  let closeButton = document.querySelector(closeButtonClass);
 
-mapOpenButton.addEventListener( 'click', function () {
-  mapPopup.style.display = 'block';
-});
+  openButton.addEventListener('click', function (evt) {
+    if (defaultActionList[0] === true) {
+      evt.preventDefault();
+    }
 
-mapCloseButton.addEventListener('click', function (evt) {
-  evt.preventDefault();
-  mapPopup.style.display = 'none';
-});
+    popup.style.display = 'block';
+  });
 
+  closeButton.addEventListener('click', function (evt) {
+    if (defaultActionList[1] === true) {
+      evt.preventDefault();
+    }
 
-let contactUsOpenButton = document.querySelector('.open-contact-us-popup');
-let contactUsCloseButton = document.querySelector('.contact-us-popup-close');
-let contactUsPopup = document.querySelector('.contact-us-popup');
+    popup.style.display = 'none';
+  });
+};
 
-contactUsOpenButton.addEventListener('click', function () {
-  contactUsPopup.style.display = 'block';
-});
-
-contactUsCloseButton.addEventListener('click', function () {
-  contactUsPopup.style.display = 'none';
-});
+popupConstructor('.map-popup', '.open-map-button', '.map-popup-close', [false, true]);
+popupConstructor('.contact-us-popup', '.open-contact-us-popup', '.contact-us-popup-close', [true, false]);
