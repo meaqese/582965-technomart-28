@@ -1,6 +1,5 @@
 *, *::before, *::after {
   box-sizing: border-box;
-  /*outline: 2px solid green;*/
 }
 
 :root {
@@ -1064,6 +1063,8 @@ img {
   width: 14px;
   height: 12px;
 
+  vertical-align: top;
+
   background-image: url("../img/icon-home.svg");
   background-repeat: no-repeat;
   background-position: 0;
@@ -1252,6 +1253,7 @@ img {
 
 .filter-option-range-divider {
   display: inline-block;
+  vertical-align: top;
 
   width: 30px;
   height: 18px;
