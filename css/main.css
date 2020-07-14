@@ -49,6 +49,8 @@
   --light-black-03: rgba(255, 255, 255, 0.3);
   --light-black-015: rgba(0, 0, 0, 0.15);
   --white-05: rgba(255, 255, 255, 0.5);
+  --basic-greylight-03: rgba(197, 197, 197, 0.3);
+  --grey-text-03: rgba(169,169,169, 0.3);
 
   --linear-greylight: linear-gradient(to bottom, white, #EAEAEA);
 
@@ -225,7 +227,6 @@ img {
   font-size: 18px;
 }
 
- /* TODO: Доделать поиск */
 .search-input:hover input::placeholder {
   color: white;
 }
@@ -259,7 +260,15 @@ img {
   display: flex;
 }
 
-.header-menu a {
+.header-menu a:hover::before {
+  opacity: 1;
+}
+
+.header-menu a:active::before {
+  opacity: 0.3;
+}
+
+.menu-bookmarks {
   color: white;
   font-size: 18px;
   line-height: 24px;
@@ -277,8 +286,6 @@ img {
   text-align: center;
 
   position: relative;
-
-  opacity: 1;
 }
 
 .menu-bookmarks::before {
@@ -298,9 +305,30 @@ img {
   opacity: 0.3;
 }
 
-.header-menu .menu-cart {
-  background-color: var(--basic-red);
+.menu-bookmarks:active {
+  color: var(--white-05);
+}
+
+.menu-cart {
+  color: white;
+  font-size: 18px;
+  line-height: 24px;
+
+  display: block;
+
   width: 150px;
+  height: 100%;
+
+  padding-top: 9px;
+  padding-bottom: 9px;
+  padding-left: 35px;
+  padding-right: 21px;
+
+  text-align: center;
+
+  position: relative;
+
+  background-color: var(--basic-red);
 }
 
 .menu-cart::before {
@@ -320,23 +348,29 @@ img {
   opacity: 0.3;
 }
 
-.header-menu a:hover::before {
-  opacity: 1;
-}
-
-.header-menu a:active::before {
-  opacity: 0.3;
-}
-
-.header-menu a:active {
+.menu-cart:active {
   color: var(--white-05);
 }
 
-.header-menu .checkout-button {
-  background-color: var(--basic-green);
+.checkout-button {
+  color: white;
+  font-size: 18px;
+  line-height: 24px;
 
-  padding-left: 0;
-  padding-right: 0;
+  display: block;
+
+  width: 150px;
+  height: 100%;
+
+  padding-top: 9px;
+  padding-bottom: 9px;
+
+
+  text-align: center;
+
+  position: relative;
+
+  background-color: var(--basic-green);
 }
 
 .checkout-button:hover {
@@ -345,6 +379,7 @@ img {
 
 .checkout-button:active {
   background-color: var(--basic-green);
+  color: var(--white-05);
 }
 
   /* header-bottom */
@@ -722,11 +757,11 @@ img {
 }
 
 .box-item a:hover {
-  background-color: var(--light-black-03);
+  background-color: var(--basic-greylight-03);
 }
 
 .box-item a:focus {
-  background-color: var(--light-black-03);
+  background-color: var(--grey-text-03);
 }
 
 .box-item.special-yellow::after {

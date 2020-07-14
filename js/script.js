@@ -1,6 +1,6 @@
 let popupConstructor = function (popupClass, openButtonClass, ...closeButtonClass) {
   let popup = document.querySelector(popupClass);
-
+  if (!popup) { return; }
 
   let openButtons = document.querySelectorAll(openButtonClass);
 
@@ -23,26 +23,19 @@ let popupConstructor = function (popupClass, openButtonClass, ...closeButtonClas
   }
 };
 
-let getFileName = function() {
-  return location.pathname.split('/').pop();
-};
+popupConstructor(
+  '.map-popup',
+  '.open-map-button',
+  '.map-popup-close'
+);
+popupConstructor(
+  '.contact-us-popup',
+  '.open-contact-us-popup',
+  '.contact-us-popup-close',
+);
+popupConstructor(
+  '.added-to-basket-popup',
+  '.buy-button',
+  '.popup-basket-close-button', '.popup-continue-button'
+);
 
-if (getFileName() === 'index.html') {
-  popupConstructor(
-    '.map-popup',
-    '.open-map-button',
-    '.map-popup-close'
-  );
-  popupConstructor(
-    '.contact-us-popup',
-    '.open-contact-us-popup',
-    '.contact-us-popup-close',
-  );
-}
-else if (getFileName() === 'catalog.html') {
-  popupConstructor(
-    '.added-to-basket-popup',
-    '.buy-button',
-    '.popup-basket-close-button', '.popup-continue-button'
-  );
-}
