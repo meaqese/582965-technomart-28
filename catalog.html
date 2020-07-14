@@ -42,8 +42,8 @@
           </div>
         </form>
         <div class="header-menu">
-          <a class="menu-bookmarks" href="">Закладки</a>
-          <a class="menu-cart" href="">Корзина</a>
+          <a class="menu-bookmarks" href="">Закладки: 0</a>
+          <a class="menu-cart" href="">Корзина: 10</a>
           <a class="checkout-button" href="">Оформить заказ</a>
         </div>
       </div>
@@ -62,7 +62,7 @@
           <div>
             <div class="profile-actions">
               <p class="profile-initials">Равшан Джамшутович</p>
-              <a class="profile-logout" href="">
+              <a class="profile-logout" href="/logout">
                 <span class="visually-hidden">Выйти</span>
               </a>
             </div>
@@ -346,6 +346,17 @@
         </div>
       </div>
 
+      <section class="added-to-basket-popup">
+        <p class="popup-info">Товар добавлен в корзину!</p>
+
+        <div class="choice-future-buttons">
+          <a class="button popup-checkout-button" href="">Оформить заказ</a>
+          <a class="button popup-continue-button" href="">Продолжить покупки</a>
+        </div>
+
+        <button class="popup-close-button popup-basket-close-button" aria-label="Закрыть"></button>
+      </section>
+
     </section>
     <section class="about-good">
       <div class="container">
@@ -453,5 +464,6 @@
     <button type="button">Продолжить покупки</button>
     <button type="button">Закрыть</button>
   </section>
+  <script src="js/script.js"></script>
 </body>
 </html>
