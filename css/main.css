@@ -1610,8 +1610,6 @@ img {
   margin-bottom: 18px;
 
   position: relative;
-
-  tab-index: 0;
 }
 
 .catalog-item img {
@@ -1638,12 +1636,12 @@ img {
 }
 
 .catalog-item:hover .catalog-item-buttons,
-.catalog-item:focus .catalog-item-buttons{
+.catalog-item:focus-within .catalog-item-buttons{
   display: block;
 }
 
 .catalog-item:hover .catalog-item-photo,
-.catalog-item:focus .catalog-item-photo {
+.catalog-item:focus-within .catalog-item-photo {
   display: none;
 }
 
