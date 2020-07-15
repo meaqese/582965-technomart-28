@@ -1414,13 +1414,16 @@ img {
   background-image: url("../img/radio-off-hover.svg");
 }
 
-
 .filter-option-radio:disabled + label::before {
   background-image: url("../img/radio-off-disabled.svg");
 }
 
 .filter-option-radio:disabled + label {
   opacity: 0.4;
+}
+
+.filter-option-radio:focus + label::before {
+  background-image: url("../img/radio-off-hover.svg");
 }
 
 .filter-option-radio:checked + label::before {
@@ -1438,7 +1441,7 @@ img {
   background-position: 0;
 }
 
-.filter-option-radio:checked + label:hover:before {
+.filter-option-radio:checked + label:hover::before {
   background-image: url("../img/radio-on-hover.svg");
 }
 
@@ -1448,6 +1451,10 @@ img {
 
 .filter-option-radio:checked:disabled + label {
   opacity: 0.4;
+}
+
+.filter-option-radio:checked:focus + label::before {
+  background-image: url("../img/radio-on-hover.svg");
 }
 
 .filter .white-button {
