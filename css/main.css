@@ -1117,6 +1117,7 @@ img {
 
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 .catalog-caption {
@@ -1351,6 +1352,10 @@ img {
   background-image: url("../img/checkbox-off-hover.svg");
 }
 
+.filter-option-checkbox:focus + label::before {
+  background-image: url("../img/checkbox-off-hover.svg");
+}
+
 .filter-option-checkbox:disabled + label::before {
   background-image: url("../img/checkbox-off-disabled.svg");
 }
@@ -1375,6 +1380,10 @@ img {
 }
 
 .filter-option-checkbox:checked + label:hover::before {
+  background-image: url("../img/checkbox-on-hover.svg");
+}
+
+.filter-option-checkbox:checked:focus + label::before {
   background-image: url("../img/checkbox-on-hover.svg");
 }
 
@@ -1405,6 +1414,7 @@ img {
   background-image: url("../img/radio-off-hover.svg");
 }
 
+
 .filter-option-radio:disabled + label::before {
   background-image: url("../img/radio-off-disabled.svg");
 }
@@ -1432,11 +1442,11 @@ img {
   background-image: url("../img/radio-on-hover.svg");
 }
 
-.filter-option-radio:disabled:checked + label::before {
+.filter-option-radio:checked:disabled + label::before {
   background-image: url("../img/radio-on-disabled.svg");
 }
 
-.filter-option-radio:disabled:checked + label {
+.filter-option-radio:checked:disabled + label {
   opacity: 0.4;
 }
 
@@ -1593,6 +1603,8 @@ img {
   margin-bottom: 18px;
 
   position: relative;
+
+  tab-index: 0;
 }
 
 .catalog-item img {
@@ -1618,11 +1630,13 @@ img {
   box-shadow: 0 4px 20px 0 var(--light-black-015);
 }
 
-.catalog-item:hover .catalog-item-buttons {
+.catalog-item:hover .catalog-item-buttons,
+.catalog-item:focus .catalog-item-buttons{
   display: block;
 }
 
-.catalog-item:hover .catalog-item-photo {
+.catalog-item:hover .catalog-item-photo,
+.catalog-item:focus .catalog-item-photo {
   display: none;
 }
 
@@ -2018,6 +2032,8 @@ img {
 
   margin: 0;
   margin-bottom: 30px;
+
+  z-index: 1;
 }
 
 .tab-item-description p {
@@ -2028,6 +2044,8 @@ img {
   width: 331px;
 
   margin: 0;
+
+  z-index: 1;
 }
 
 /* Pagination */
@@ -2035,11 +2053,10 @@ img {
   list-style: none;
   padding: 0;
   margin: 0;
-
   margin-top: 30px;
 
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-start;
 
   width: 284px;
 }
@@ -2057,6 +2074,7 @@ img {
   line-height: 18px;
 
   padding: 10px 15px;
+  margin-right: 10px;
 
   background-color: white;
   border: 1px solid var(--white-border);
@@ -2065,8 +2083,10 @@ img {
   height: 38px;
 }
 
-.pagination li:last-child {
-  width: 140px;
+.pagination li:last-child a {
+  padding-left: 32px;
+  padding-right: 31px;
+  margin: 0;
 }
 
 .pagination .active {
@@ -2077,13 +2097,14 @@ img {
   background-color: var(--basic-red);
 }
 
-.pagination a:hover {
+.pagination a:not(.active):hover {
   border: 1px solid var(--basic-greylight)
 }
 
-.pagination a:active {
+.pagination a:not(.active):active {
   border: 1px solid var(--basic-red);
 }
+
 
 /* Main - About Good */
 .about-good {
