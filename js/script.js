@@ -38,4 +38,3 @@ popupConstructor(
   '.buy-button',
   '.popup-basket-close-button', '.popup-continue-button'
 );
-

@@ -6,7 +6,7 @@
 
   <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css">
   <link href="https://fonts.googleapis.com/css2?family=Cuprum:ital,wght@0,400;0,700;1,400&family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/main.min.css">
 </head>
 <body>
   <header class="header">
@@ -43,7 +43,7 @@
         </form>
         <div class="header-menu">
           <a class="menu-bookmarks" href="">Закладки: 0</a>
-          <a class="menu-cart" href="">Корзина: 10</a>
+          <a class="menu-cart red" href="">Корзина: 10</a>
           <a class="checkout-button" href="">Оформить заказ</a>
         </div>
       </div>
@@ -51,7 +51,7 @@
     <section class="header-bottom">
       <div class="container">
         <div class="header-bottom-top">
-          <p class="description">Интернет-магазин строительных материалов и инструментов для ремонта</p>
+          <p class="description">Интернет-магазин строительных материалов<br>и инструментов для ремонта</p>
           <div class="header-contacts">
             <h2 class="visually-hidden">Контактная информация</h2>
 
@@ -59,16 +59,16 @@
             <p class="address">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
           </div>
 
-          <div>
+          <div class="profile">
             <div class="profile-actions">
-              <p class="profile-initials">Равшан Джамшутович</p>
-              <a class="profile-logout" href="/logout.html">
+              <a class="profile-initials" href="profile.html">Равшан Джамшутович</a>
+              <a class="profile-logout" href="logout.html">
                 <span class="visually-hidden">Выйти</span>
               </a>
             </div>
             <ul class="profile-menu">
               <li><a class="profile-orders" href="">Мои заказы</a></li>
-              <li><a class="profile" href="">Личный кабинет</a></li>
+              <li><a class="profile-link" href="">Личный кабинет</a></li>
             </ul>
           </div>
         </div>
@@ -109,15 +109,15 @@
           <h2>Фильтр:</h2>
 
           <div>
-            <h3 class="filter-option-caption">Цена:</h3>
+            <h3 class="filter-option-caption filter-price-caption">Цена:</h3>
 
             <div class="filter-option-range">
               <div class="scale">
                 <div class="bar"></div>
               </div>
 
-              <div class="toggle toggle-min"></div>
-              <div class="toggle toggle-max"></div>
+              <div class="toggle toggle-min" aria-label="Минимальная цена"></div>
+              <div class="toggle toggle-max" aria-label="Максимальная цена"></div>
             </div>
 
             <div class="filter-option-range-in-numbers">
@@ -128,7 +128,7 @@
           </div>
 
           <div>
-            <h3 class="filter-option-caption">Производители:</h3>
+            <h3 class="filter-option-caption filter-manufacturer-caption">Производители:</h3>
             <ul class="filter-option-list">
               <li class="filter-option-item">
                 <input class="visually-hidden filter-option-checkbox" type="checkbox" id="manufacturer-1" name="manufacturer" value="BOSCH" checked>
@@ -154,7 +154,7 @@
             </div>
 
             <div>
-              <h3 class="filter-option-caption">Питание:</h3>
+              <h3 class="filter-option-caption filter-supply-caption">Питание:</h3>
               <ul class="filter-option-list">
                 <li class="filter-option-item">
                   <input class="visually-hidden filter-option-radio" type="radio" id="power-supply-1" name="power-supply" value="main" checked>
@@ -240,7 +240,7 @@
                 <p class="actual-price">25500 Р.</p>
               </div>
             </li>
-            <li class="catalog-item uncovered new">
+            <li class="catalog-item new">
               <img class="catalog-item-photo" src="img/catalog/bfg6000.png" alt="Перфоратор BOSCH BFG 6000" width="144" height="128">
 
               <div class="catalog-item-buttons">
@@ -373,7 +373,7 @@
     <div class="footer-top">
       <div class="container">
         <div class="footer-sitemap-top">
-          <a class="logo" href="index.html">
+          <a class="footer-logo" href="index.html">
             <img src="img/footer-logo.svg" alt="ТЕХНОМАРТ" width="220" height="68">
           </a>
           <ul class="footer-sitemap-top-list">
@@ -457,6 +457,6 @@
       </div>
     </div>
   </footer>
-  <script src="js/script.js"></script>
+  <script src="js/script.min.js"></script>
 </body>
 </html>
